@@ -1,0 +1,125 @@
+/* Reset default margins and box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #green;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Profile Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Profile Section with Flex Layout */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* Profile Image on Right */
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Profile Info Text on Left */
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Toggle Button */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Forest Animation Section */
+.forest {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.tree {
+  width: 20px;
+  height: 100px;
+  background: linear-gradient(to top, #0b6623, #5a9b41);
+  border-radius: 5px 5px 0 0;
+  transform-origin: bottom center;
+  animation: sway 3s infinite ease-in-out;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
