@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile & मंदिर निमंत्रण</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Tiro Devanagari Hindi', serif;
+      background: #fff3e0;
+      color: #3e2723;
+    }
+
+    nav {
+      background: #d84315;
+      padding: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .page-break {
+      border-top: 3px dashed #d84315;
+      margin: 50px auto;
+      width: 80%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #d84315;
+    }
+
+    .profile {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #d84315;
+    }
+
+    .forest {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tree {
+      width: 40px;
+      height: 100px;
+      background: green;
+      border-radius: 10px;
+      animation: sway 2s infinite ease-in-out;
+    }
+
+    @keyframes sway {
+      0% { transform: rotate(0); }
+      50% { transform: rotate(4deg); }
+      100% { transform: rotate(0); }
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: none;
+      background-color: #bf360c;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #description.hidden {
+      display: none;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .card h1 {
+      text-align: center;
+      color: #b71c1c;
+      font-size: 2.5rem;
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #d84315;
+      font-size: 1.6rem;
+    }
+
+    .card p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .program {
+      background: #fff8e1;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px dashed #ef6c00;
+    }
+
+    .program h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      text-decoration: underline;
+    }
+
+    .program ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .program ul li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .footer {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    .flower {
+      text-align: center;
+      font-size: 28px;
+    }
+
+    @media print {
+      .page {
+        page-break-after: always;
+      }
+
+      nav, .page-break {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Login</a></li>
+    <li><a href="#">Signup</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE 1: PROFILE -->
+<div class="page">
+  <div class="profile">
+    <img src="1000024255.jpg" alt="Profile Photo" />
+    <div>
+      <h1>Priyam Mishra</h1>
+      <p><strong>Mobile:</strong> 6387964285</p>
+      <p><strong>Address:</strong> Subhas Nagar, Mulhai Kheda, Lucknow</p>
+      <p id="description" class="hidden">
+        <strong>Description:</strong> A web developer with a passion for clean and user-friendly websites.
+      </p>
+      <button id="toggleButton">Click me</button>
+    </div>
+  </div>
+
+  <!-- Forest animation -->
+  <div class="forest">
+    <div class="tree"></div>
+    <div class="tree" style="animation-delay: 0.3s;"></div>
+    <div class="tree" style="animation-delay: 0.6s;"></div>
+    <div class="tree" style="animation-delay: 0.9s;"></div>
+    <div class="tree" style="animation-delay: 1.2s;"></div>
+  </div>
+</div>
+
+<!-- VISUAL PAGE BREAK -->
+<div class="page-break">--- निमंत्रण पृष्ठ ---</div>
+
+<!-- PAGE 2: INVITATION -->
+<div class="page">
+  <div class="card">
+    <div class="flower">🌸🙏🌼</div>
+    <h1>श्री सिद्धेश्वर महादेव मंदिर उद्घाटन</h1>
+    <h2>🙏 आपका हार्दिक स्वागत है 🙏</h2>
+    <p>दिनांक: <strong>11 जुलाई 2025</strong></p>
+    <p>स्थान: बिहारोजपुर, पोस्ट - तिलंगा गोपीगंज,<br>जिला - भदोही (221303)</p>
+
+    <div class="program">
+      <h3>📿 पूजन कार्यक्रम 📿</h3>
+      <ul>
+        <li>11 जुलाई: शोभा यात्रा, नगर परिक्रमा, गंगा पूजन</li>
+        <li>12 जुलाई: पंचांग पूजन, मण्डप प्रवेश, आरणि मंथन</li>
+        <li>13 जुलाई: वेदी पूजन</li>
+        <li>14 जुलाई: औषधि स्नान</li>
+        <li>15 जुलाई: अन्नाधिवास</li>
+        <li>16 जुलाई: जलाधिवास</li>
+        <li>17 जुलाई: बारात एवं विवाह</li>
+        <li>18 जुलाई: शैय्याधिवास</li>
+        <li>19 जुलाई: दिव्य औषधि स्नान</li>
+        <li>20 जुलाई: रुद्राभिषेक</li>
+        <li>21 जुलाई: प्राण प्रतिष्ठा व पूर्णाहुति</li>
+        <li>22 जुलाई: प्रसाद वितरण एवं भंडारा</li>
+      </ul>
+    </div>
+
+    <p class="footer">🙏 कृपया पधारकर हमें कृतार्थ करें 🙏</p>
+    <div class="flower">🌼🌺🌸</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  document.getElementById("toggleButton").addEventListener("click", function () {
+    const desc = document.getElementById("description");
+    desc.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

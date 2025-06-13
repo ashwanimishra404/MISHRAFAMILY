@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>मंदिर उद्घाटन निमंत्रण</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Tiro Devanagari Hindi', serif;
+      background: radial-gradient(circle at top, #ffe5b4, #ffcc80, #ffb74d);
+      background-attachment: fixed;
+      color: #3e2723;
+      overflow-y: auto;
+    }
+
+    .container {
+      padding: 4vw 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 5px solid #d32f2f;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 850px;
+      width: 100%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      color: #b71c1c;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #ffccbc;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #bf360c;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .flower {
+      text-align: center;
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .program {
+      background: #fff3e0;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 12px;
+      border: 2px dashed #ef6c00;
+    }
+
+    .program h3 {
+      text-align: center;
+      color: #e65100;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+
+    .program ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    .program ul li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .date {
+      font-weight: bold;
+      color: #d84315;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #6a1b1a;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p, .program ul li {
+        font-size: 1rem;
+      }
+
+      .program h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="flower">🌸🙏🌼</div>
+      <h1>श्री सिद्धेश्वर महादेव मंदिर उद्घाटन</h1>
+      <h2>आपका हार्दिक स्वागत है</h2>
+      <p>दिनांक: <strong>11 जुलाई 2025</strong></p>
+      <p>स्थान: बिहारोजपुर, पोस्ट - तिलंगा गोपीगंज,<br>जिला - भदोही (221303)</p>
+
+      <div class="program">
+        <h3>📿 पूजन कार्यक्रम 📿</h3>
+        <ul>
+          <li><span class="date">11 जुलाई शुक्रवार:</span> शोभा यात्रा, नगर परिक्रमा, गंगा पूजन</li>
+          <li><span class="date">12 जुलाई शनिवार:</span> पंचांग पूजन, मण्डप प्रवेश, आरणि मंथन</li>
+          <li><span class="date">13 जुलाई रविवार:</span> वैदिक ब्राह्मणों के द्वारा वेदी पूजन</li>
+          <li><span class="date">14 जुलाई सोमवार:</span> भगवान शिव जी का औषधियों द्वारा स्नान </li>
+          <li><span class="date">15 जुलाई मंगलवार:</span> भगवान शिव जी का अन्नाधिवास</li>
+          <li><span class="date">16 जुलाई बुधवार:</span> भगवान शिव जी का जलाधिवास</li>
+          <li><span class="date">17 जुलाई गुरुवार:</span>भगवान शिव जी का भव्य बारात व विवाह</li>
+          <li><span class="date">18 जुलाई शुक्रवार:</span> भगवान शिव जी का शैय्याधिवास</li>
+          <li><span class="date">19 जुलाई शनिवार:</span> भगवान शिव जी का दिव्य औषधि स्नान</li>
+          <li><span class="date">20 जुलाई रविवार:</span> भगवान शिव जी का भव्य रुद्राभिषेक</li>
+          <li><span class="date">21 जुलाई सोमवार:</span> भगवान शिव जी का प्राण प्रतिष्ठा समापन, पूर्णाहुति</li>
+          <li><span class="date">22 जुलाई मंगलवार:</span> प्रसाद वितरण एवं भंडारा</li>
+        </ul>
+      </div>
+
+      <p class="footer">🙏 कृपया पधारकर हमें कृतार्थ करें 🙏</p>
+      <div class="flower">🌼🌺🌸</div>
+    </div>
+  </div>
+</body>
+</html>
